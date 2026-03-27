@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Django Website{% endblock %}</title>  
+    <link rel="stylesheet" href="{% static 'style.css' %}"> 
+</head>
+<body>
+    <header>
+        <h1>My Django Website</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'newApp:app' %}">New App</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block content %}
+    <!-- Content will be injected here -->
+    {% endblock %}
+    
+
+</body>
+</html>   
