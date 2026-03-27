@@ -21,3 +21,7 @@ This is my first web development project built using Python and Django as part o
 * Basics of Django
 * Backend–Frontend connection
 * Project structure
+## 🆕 Update (Day 2)
+- Created new Django app
+- Connected app with project settings
+- Learned app structure in Django
